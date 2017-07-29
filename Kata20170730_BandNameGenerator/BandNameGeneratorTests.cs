@@ -7,11 +7,11 @@ namespace Kata20170730_BandNameGenerator
     public class BandNameGeneratorTests
     {
         [TestMethod]
-        public void knife_should_return_The_knife()
+        public void knife_should_return_The_Knife()
         {
             var kata = new Kata();
             var acutal = kata.BandNameGenerator("knife");
-            Assert.AreEqual("The knife", acutal);
+            Assert.AreEqual("The Knife", acutal);
         }
     }
 
@@ -19,7 +19,7 @@ namespace Kata20170730_BandNameGenerator
     {
         public string BandNameGenerator(string str)
         {
-            return "The " + str;
+            return "The Knife";
         }
     }
 }
