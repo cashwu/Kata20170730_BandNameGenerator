@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections;
+using System.Collections.Generic;
 using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
@@ -38,13 +40,14 @@ namespace Kata20170730_BandNameGenerator
         public string BandNameGenerator(string str)
         {
             var charArray = str.ToCharArray();
-            if (charArray.First() == charArray.Last())
-            {
-                return string.Concat(charArray.Concat(charArray.Skip(1))
-                    .Select((c, i) => i == 0 ? Char.ToUpper(c) : c));
-            }
+            return string.Concat(charArray.First() == charArray.Last() 
+                ? FirstCharToUpper(charArray.Concat(charArray.Skip(1))) 
+                : "The ".ToCharArray().Concat(FirstCharToUpper(charArray)));
+        }
 
-            return "The " + string.Concat(str.Select((c, i) => i == 0 ? Char.ToUpper(c) : c));
+        private static IEnumerable<char> FirstCharToUpper(IEnumerable<char> str)
+        {
+            return str.Select((c, i) => i == 0 ? Char.ToUpper(c) : c);
         }
     }
 }
