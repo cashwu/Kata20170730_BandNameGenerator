@@ -19,6 +19,12 @@ namespace Kata20170730_BandNameGenerator
             AssertBandNameShouldBe("tart", "Tartart");
         }
 
+        [TestMethod]
+        public void bed_should_return_The_Bed()
+        {
+            AssertBandNameShouldBe("bed", "The Bed");
+        }
+
         private static void AssertBandNameShouldBe(string bandName, string expected)
         {
             var kata = new Kata();
@@ -38,7 +44,7 @@ namespace Kata20170730_BandNameGenerator
                     .Select((c, i) => i == 0 ? Char.ToUpper(c) : c));
             }
 
-            return "The Knife";
+            return "The " + string.Concat(str.Select((c, i) => i == 0 ? Char.ToUpper(c) : c));
         }
     }
 }
