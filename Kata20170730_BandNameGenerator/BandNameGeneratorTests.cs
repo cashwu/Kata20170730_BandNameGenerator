@@ -9,9 +9,14 @@ namespace Kata20170730_BandNameGenerator
         [TestMethod]
         public void knife_should_return_The_Knife()
         {
+            AssertBandNameShouldBe("knife", "The Knife");
+        }
+
+        private static void AssertBandNameShouldBe(string bandName, string expected)
+        {
             var kata = new Kata();
-            var acutal = kata.BandNameGenerator("knife");
-            Assert.AreEqual("The Knife", acutal);
+            var acutal = kata.BandNameGenerator(bandName);
+            Assert.AreEqual(expected, acutal);
         }
     }
 
