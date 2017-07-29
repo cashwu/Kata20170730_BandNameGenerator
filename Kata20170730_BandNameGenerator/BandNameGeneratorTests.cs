@@ -27,6 +27,12 @@ namespace Kata20170730_BandNameGenerator
             AssertBandNameShouldBe("bed", "The Bed");
         }
 
+        [TestMethod]
+        public void sandles_should_return_Sandlesandles()
+        {
+            AssertBandNameShouldBe("sandles", "Sandlesandles");
+        }
+
         private static void AssertBandNameShouldBe(string bandName, string expected)
         {
             var kata = new Kata();
