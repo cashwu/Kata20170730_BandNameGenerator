@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26724.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kata20170730_BandNameGenerator", "Kata20170730_BandNameGenerator\Kata20170730_BandNameGenerator.csproj", "{317E1965-FE77-4E00-B25D-9E3EC8E9A1E8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{317E1965-FE77-4E00-B25D-9E3EC8E9A1E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{317E1965-FE77-4E00-B25D-9E3EC8E9A1E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{317E1965-FE77-4E00-B25D-9E3EC8E9A1E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{317E1965-FE77-4E00-B25D-9E3EC8E9A1E8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E30C1BED-7667-4DBA-ACD4-A206BC16C767}
+	EndGlobalSection
+	GlobalSection(CodealikeProperties) = postSolution
+		SolutionGuid = c7d7dcb5-b03d-4427-bb45-db3c2439d277
+	EndGlobalSection
+EndGlobal
